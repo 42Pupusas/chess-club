@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/ufQJcsDM3Z2
+-->
+<section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+        <div class="flex flex-col justify-center space-y-4">
+            <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                About Us
+            </h1>
+            <p
+                class="max-w-[600px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400">
+                We are a dedicated team committed to providing the best service to our customers.
+            </p>
+        </div>
+        <div class="grid grid-cols-3 gap-6 mt-10">
+            <div class="flex flex-col items-center"><img src="/placeholder.svg" width="100" height="100"
+                    alt="Team member 1" class="rounded-full" style="aspect-ratio: 100 / 100; object-fit: cover;">
+                <h3 class="text-xl font-bold mt-2">John Doe</h3>
+                <p class="text-md text-gray-500">CEO</p>
+            </div>
+            <div class="flex flex-col items-center"><img src="/placeholder.svg" width="100" height="100"
+                    alt="Team member 2" class="rounded-full" style="aspect-ratio: 100 / 100; object-fit: cover;">
+                <h3 class="text-xl font-bold mt-2">Jane Smith</h3>
+                <p class="text-md text-gray-500">CTO</p>
+            </div>
+            <div class="flex flex-col items-center"><img src="/placeholder.svg" width="100" height="100"
+                    alt="Team member 3" class="rounded-full" style="aspect-ratio: 100 / 100; object-fit: cover;">
+                <h3 class="text-xl font-bold mt-2">Harry Johnson</h3>
+                <p class="text-md text-gray-500">COO</p>
+            </div>
+        </div>
+        <div class="mt-10">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <form class="space-y-4"><input placeholder="Name" class="w-full p-2 border border-gray-300 rounded"
+                    aria-label="Name" type="text"><input placeholder="Email"
+                    class="w-full p-2 border border-gray-300 rounded" aria-label="Email" type="email"><textarea
+                    placeholder="Message" class="w-full p-2 h-32 border border-gray-300 rounded"
+                    aria-label="Message"></textarea><button
+                    class="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 w-full p-2 bg-blue-500 text-white rounded"
+                    type="submit">Submit</button></form>
+        </div>
+        <div class="mt-10"><a
+                class="inline-flex h-10 items-center justify-center rounded-md bg-zinc-900 px-8 text-sm font-medium text-zinc-50 shadow transition-colors hover:bg-zinc-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-50/90 dark:focus-visible:ring-zinc-300"
+                href="#">
+                Back
+            </a></div>
+    </div>
+</section>
+{% endblock %}

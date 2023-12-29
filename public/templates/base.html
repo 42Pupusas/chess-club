@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTMX -->
+    <script src="../js/htmx.min.js"></script>
+    <script src="../js/json-enc.js"></script>
+
+    <!-- tailwindcss -->
+    <link href="../styles/main.css" rel="stylesheet" />
+
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

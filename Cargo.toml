@@ -1,0 +1,29 @@
+[package]
+name = "reservas"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "utils"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "router"
+path = "src/router.rs"
+
+[dependencies]
+nostro2 = "0.1.10"
+anyhow = "1.0.77"
+askama = { version = "0.12.1", features = ["markdown"] }
+axum = { version = "0.7.2", features = ["macros"] }
+chrono = "0.4.29"
+futures = "0.3.28"
+serde = "1.0.188"
+serde_json = "1.0.105"
+tokio = { version = "1.32.0", features = ["full"] }
+tower = "0.4.13"
+tower-http = { version = "0.5", features = ["fs", "trace"] }
+tracing = {version = "0.1.37", features = ["log"] }
+tracing-subscriber = {version = "0.3.17", features = ["env-filter"] }
+teloxide = "0.12.2"
+openssl = "0.10.62"
